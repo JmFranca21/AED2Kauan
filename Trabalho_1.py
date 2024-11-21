@@ -14,7 +14,7 @@ BLACK = (0, 0, 0)
 screen_width, screen_height = 800, 600
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption("Controle de Fluxo")
-font = pygame.font.Font(None, 50)
+font = pygame.font.Font(None, 36)
 
 # Define a classe do Botão
 class Button:
@@ -77,7 +77,7 @@ class Array:
         self.array = []
     
     def input_array(self, screen):
-        
+        pass
         
 # Função da tela inicial (menu)
 def menu_screen(screen):
@@ -205,7 +205,7 @@ def main_controller():
         "heap_screen": heap_screen,           #tela de Heap Sort
         "radix_screen": radix_screen         #tela de Radix Sort
     }
-    current_screen = "menu_screen" #tela atutal
+    current_screen = "menu_screen" #tela atual
 
     #essa função permite passar para a proxima tela, pegando screen (global) para desenhar a tela
     while True:
